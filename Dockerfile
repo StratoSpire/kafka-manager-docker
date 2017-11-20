@@ -8,7 +8,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 ENV ZK_HOSTS=localhost:2181 \
-    KM_VERSION=1.3.3.4 \
+    KM_VERSION=1.3.3.14 \
     KM_CONFIGFILE="conf/application.conf"
 
 RUN curl -L https://github.com/yahoo/kafka-manager/archive/$KM_VERSION.tar.gz -o /tmp/kafka-manager.tar.gz && \
